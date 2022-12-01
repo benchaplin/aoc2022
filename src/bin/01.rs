@@ -1,10 +1,10 @@
 fn main() {
     let input = include_str!("../../inputs/01.txt");
-    one(input);
-    two(input);
+    pt_one(input);
+    pt_two(input);
 }
 
-fn one(input: &str) {
+fn pt_one(input: &str) {
     println!("{:?}", input.split("\n\n") 
         .map(|line| {
             line.split("\n")
@@ -15,7 +15,7 @@ fn one(input: &str) {
     );
 }
 
-fn two(input: &str) {
+fn pt_two(input: &str) {
     let mut sums: Vec<i32> = input.split("\n\n") 
         .map(|line| {
             line.split("\n")
